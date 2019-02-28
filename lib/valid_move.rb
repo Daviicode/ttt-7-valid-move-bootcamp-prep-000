@@ -3,9 +3,7 @@ def valid_move?(board, position)
 	spot = position.to_i - 1
 	if !position_taken?(board, spot) && spot.between?(0,8)
 		return true
- 	else if position_taken?(board, spot) == " "
- 	  return true 
-		else 
+ 	else
 		  return false
  	end
  end
